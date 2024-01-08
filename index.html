@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <div class="main" id="main">
+            <h3 style="color:white; text-align: center">Calculator</h3>
+            <div class="container" id="container">
+            <div class="display" id="display">
+                    <p>0</p>
+            </div>
+            <div class="tr">
+            <div class="backspace"> <button id="backspace" onclick="userInput('del')">--del--</button> </div>
+            <div class="clear"><button id="clear" onclick="userInput('clear')">C</button></div>
+            <div class="ansdis" id="ansdis">
+                <p></p>
+            </div>
+            
+        </div>
+        <div class="r1">
+            <div class="one"><button id="one" onclick=" return userInput('1')">1</button></div>
+            <div class="two"><button id="two" onclick="userInput('2')">2</button></div>
+            <div class="three"><button id="three" onclick="userInput('3')">3</button></div>
+            <div class="plus" ><button id="plus" onclick="userInput('+')">+</button></div>
+            
+        </div>
+        <div class="r2">
+            <div class="four"><button id="four" onclick="userInput('4')">4</button></div>
+            <div class="five"><button id="five" onclick="userInput('5')">5</button></div>
+            <div class="six"><button id="six" onclick="userInput('6')">6</button></div>
+            <div class="minus"><button id="minus" onclick="userInput('-')">-</button></div>
+        </div>
+        <div class="r3">
+            <div class="seven"id="seven"><button onclick="userInput('7')">7</button></div>
+            <div class="eight"id="eight"><button onclick="userInput('8')">8</button></div>
+            <div class="nine"><button id="nine" onclick="userInput('9')">9</button></div>
+            <div class="multiply"><button id="multiply" onclick="userInput('x')">x</button></div>
+        </div>
+        <div class="r4">
+            <div class="zero"><button id="zero" onclick="userInput('0')">0</button></div>
+            <div class="point"><button id="point" onclick="userInput('.')">.</button></div>
+            <div class="divid"><button id="divid" onclick="userInput('/')">/</button></div>
+            <div class="enter"><button id="enter" onclick="userInput('ans')">ans.</button></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+   
+</body>
+</html>
